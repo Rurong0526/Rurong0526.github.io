@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang=zh-cn>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>
+        
+        个人博客搭建实录/Personal Blog Building Record - undefined
+        
+    </title>
+
+    <!-- Custom CSS -->
+    
+<link rel="stylesheet" href="/css/aircloud.css">
+
+    
+<link rel="stylesheet" href="/css/gitment.css">
+
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_28hi1hpxx24.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="段汝蓉" type="application/atom+xml">
+</head>
+
+<body>
+
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
+</div>
+
+<div class="index-about">
+    <i>  </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar radius">
+            <img src="/img/r.jpg" />
+        </div>
+        <div class="name">
+            <i>段汝蓉</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li >
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>HOME</span>
+                </a>
+            </li>
+            <li >
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>TAGS</span>
+                </a>
+            </li>
+            <li >
+                <a href="/archives">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>ARCHIVES</span>
+                </a>
+            </li>
+            <li >
+                <a href="/collect/">
+                    <i class="iconfont icon-shoucang1"></i>
+                    <span>COLLECT</span>
+                </a>
+            </li>
+            <li >
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>ABOUT</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>SEARCH</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+        <div id="toc" class="toc-article">
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%AE%9E%E5%BD%95"><span class="toc-text">个人博客搭建实录</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="toc-text">创建仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E6%90%AD%E5%BB%BA%E7%8E%AF%E5%A2%83%EF%BC%8C%E5%AE%89%E8%A3%85Node-js%E5%92%8CGit"><span class="toc-text">准备搭建环境，安装Node.js和Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E5%88%B0GitHub"><span class="toc-text">连接到GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%9B%E5%BB%BASSH%E5%AF%86%E9%92%A5"><span class="toc-text">创建SSH密钥</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85Hexo%E5%8D%9A%E5%AE%A2%E7%A8%8B%E5%BA%8F"><span class="toc-text">安装Hexo博客程序</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8A%E4%BC%A0%E9%83%A8%E7%BD%B2"><span class="toc-text">上传部署</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E4%BF%AE%E6%94%B9"><span class="toc-text">博客主题修改</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Personal-blog-building-record"><span class="toc-text">Personal blog building record</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Create-repository"><span class="toc-text">Create repository</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Prepare-to-build-the-environment-and-install-Node-js-and-Git"><span class="toc-text">Prepare to build the environment and install Node.js and Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Connect-to-GitHub"><span class="toc-text">Connect to GitHub</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Create-SSH-key"><span class="toc-text">Create SSH key</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Install-Hexo-blog-program"><span class="toc-text">Install Hexo blog program</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Upload-deployment"><span class="toc-text">Upload deployment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Blog-theme-modification"><span class="toc-text">Blog theme modification</span></a></li></ol></li></ol>
+</div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-bg" id="search-bg"></div>
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input"/>
+            <span id="begin-search">search</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+
+        <div class="index-about-mobile">
+            <i>  </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+
+
+<div class="post-container">
+    <div class="post-title">
+        个人博客搭建实录/Personal Blog Building Record
+    </div>
+
+    <div class="post-meta">
+        <span class="attr">Post：<span>2024-04-02 17:15:19</span></span>
+        
+        <span class="attr">Tags：/
+        
+        <a class="tag" href="/tags/#CS" title="CS">CS</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#Linux" title="Linux">Linux</a>
+        <span>/</span>
+        
+        
+        </span>
+        <span class="attr">Visit：<span id="busuanzi_value_page_pv"></span>
+</span>
+</span>
+    </div>
+    <div class="post-content no-indent">
+        <h1 id="个人博客搭建实录"><a href="#个人博客搭建实录" class="headerlink" title="个人博客搭建实录"></a>个人博客搭建实录</h1><p>我查阅了许多搭建个人博客的框架，最终选择了hexo，由于不是很想花钱决定挂载到GitHub上。</p>
+<h2 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h2><p>首先是在GitHub上创建了一个新的仓库(Repository)，命名为“用户名.github.io”，我自己的就命名为“7uck9f0x.github.io”，然后选择开源(Public)，然后将.gitignore文件设置为Node，仓库就创建完成啦。</p>
+<h2 id="准备搭建环境，安装Node-js和Git"><a href="#准备搭建环境，安装Node-js和Git" class="headerlink" title="准备搭建环境，安装Node.js和Git"></a>准备搭建环境，安装Node.js和Git</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install nodejs</span><br><span class="line">sudo apt install npm</span><br><span class="line">sudo apt install git</span><br></pre></td></tr></table></figure>
+
+<h2 id="连接到GitHub"><a href="#连接到GitHub" class="headerlink" title="连接到GitHub"></a>连接到GitHub</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name “github username”</span><br><span class="line">git config --global user.email “github email”</span><br></pre></td></tr></table></figure>
+<p>我自己的就是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name “7uck9f0x”</span><br><span class="line">git config --global user.email “7uck9f0x@gmail.com”</span><br></pre></td></tr></table></figure>
+
+<h2 id="创建SSH密钥"><a href="#创建SSH密钥" class="headerlink" title="创建SSH密钥"></a>创建SSH密钥</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C “github email”</span><br></pre></td></tr></table></figure>
+<p>我自己的就是</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C “7uck9f0x@gmail.com”</span><br></pre></td></tr></table></figure>
+<p>然后一直回车就可以了<br>生成了密钥后在保存密钥的地址找到<code>id_rsa.pub</code>，里面的是公钥，复制里面的内容，在GitHub的设置里找到<code>SSH和GPG密钥(SSH and GPG keys)</code>，选择创建新的SSH密钥，将复制的内容粘贴到<code>key</code>部分，<code>title</code>随便取一个就可以<br>在使用<code>Ssh-keygen -t rsa -C “github email” </code>的时候记得注意保存的地址，我最开始时是存在了&#x2F;home路径下，后来觉得麻烦就把用户切到管理员，就一直在root目录操作，后来在关联的时候就一直读取不到密钥(つд⊂)，然后又重新生成了一个密钥才读取连接成功的<br>在控制终端输入<code>ssh -T git@github.com</code> 出现 “Are you sure…”输入yes回车就好了，最后弹出“Hi, xxx! You’ve successfully… ” 就是连接成功了</p>
+<h2 id="安装Hexo博客程序"><a href="#安装Hexo博客程序" class="headerlink" title="安装Hexo博客程序"></a>安装Hexo博客程序</h2><p>首先先创建一个文件架用来存放Hexo的程序文件，我是创建在了<code>/var/www/hexo</code>，然后进入到这个目录里，使用npm一键安装Hexo</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>安装完成后初始化并安装组件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>完成后就可以生成页面并进行预览了</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>然后就可以访问<a target="_blank" rel="noopener" href="https://localhost:4000/">https://localhost:4000</a>, 出现默认页面，本地博客就安装成功了(^▽^)</p>
+<h2 id="上传部署"><a href="#上传部署" class="headerlink" title="上传部署"></a>上传部署</h2><p>然后就可以将Hexo部署到GitHub的page上了(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧<br>首先需要安装hexo-deployer-git</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>然后将_config.yml文件中的Deployment部分修该如下</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">	type: git</span><br><span class="line">	repository: git@github.com:用户名/用户名.github.io.git</span><br><span class="line">	branch: main</span><br></pre></td></tr></table></figure>
+<p>最后运行<code>hexo d</code>就把网页上传部署到github上了，<del>完结撒花(≧∇≦)&#x2F;</del></p>
+<h2 id="博客主题修改"><a href="#博客主题修改" class="headerlink" title="博客主题修改"></a>博客主题修改</h2><p>hexo的初始界面我不是很喜欢，就在hexo官网上浏览了好多主题，都很好看，我最后选择使用AirCloud感觉比较简洁还挺好看的<br>在选择好想要的主题后点击可以直接跳转到GitHub，里面有很详细的换主题的教程，直接跟着做就好了，我尝试了挺多个的，基本流程都差不多直接用<code>git clone https://github.com/……</code> 就可以了。一般都是直接下载保存hexo文件的文件夹里的themes文件夹，不过有一些是直接保存在了hexo文件夹，如果是这种情况进入到这个文件夹里找到这个文件夹的themes复制到自己的themes就可以了，最后再到_config.yml将theme更改就ok了。我自己的就是在用使用<code>git clone https://github.com/aircloud/hexo-aircloud-blog.git --recursive</code> 后直接保存在了 <code>/var/www/hexo</code>文件夹里叫<code>hexo-air-blog</code> 再到这个文件夹里找到themes复制到我自己的themes里的，在更改完后记得要重新上传部署到GitHub<br>正式完结撒花(^▽^)&#x2F;★*☆♪</p>
+<hr>
+<h1 id="Personal-blog-building-record"><a href="#Personal-blog-building-record" class="headerlink" title="Personal blog building record"></a>Personal blog building record</h1><p>I checked out many frameworks for building a personal blog, and finally chose hexo. Since I didn’t want to spend money, I decided to mount it on GitHub.</p>
+<h2 id="Create-repository"><a href="#Create-repository" class="headerlink" title="Create repository"></a>Create repository</h2><p>First, create a new repository (Repository) on GitHub and name it “username.github.io”. I named my own “7uck9f0x.github.io”, then select Open Source (Public), and then The .gitignore file is set to Node, and the warehouse is created.</p>
+<h2 id="Prepare-to-build-the-environment-and-install-Node-js-and-Git"><a href="#Prepare-to-build-the-environment-and-install-Node-js-and-Git" class="headerlink" title="Prepare to build the environment and install Node.js and Git"></a>Prepare to build the environment and install Node.js and Git</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install nodejs</span><br><span class="line">sudo apt install npm</span><br><span class="line">sudo apt install git</span><br></pre></td></tr></table></figure>
+
+<h2 id="Connect-to-GitHub"><a href="#Connect-to-GitHub" class="headerlink" title="Connect to GitHub"></a>Connect to GitHub</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;github username&quot;</span><br><span class="line">git config --global user.email &quot;github email&quot;</span><br></pre></td></tr></table></figure>
+<p>My own is</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;7uck9f0x&quot;</span><br><span class="line">git config --global user.email &quot;7uck9f0x@gmail.com&quot;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Create-SSH-key"><a href="#Create-SSH-key" class="headerlink" title="Create SSH key"></a>Create SSH key</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;github email&quot;</span><br></pre></td></tr></table></figure>
+<p>My own is</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;7uck9f0x@gmail.com&quot;</span><br></pre></td></tr></table></figure>
+<p>Then just press Enter<br>After generating the key, find <code>id_rsa.pub</code> at the address where the key is saved. The public key is inside. Copy the contents. Find <code>SSH and GPG keys (SSH and GPG keys)</code> in GitHub settings and select Create a new SSH key, paste the copied content into the <code>key</code> section, and select any <code>title</code><br>When using <code>Ssh-keygen -t rsa -C &quot;github email&quot; </code>, remember to pay attention to the saved address. At first, it existed in the &#x2F;home path. Later, I found it troublesome and switched the user to the administrator. It has been there ever since. When operating the root directory, I could not read the key (つд⊂) during the association. Then I regenerated a key before reading and connecting successfully.<br>Enter <code>ssh -T git@github.com</code> in the control terminal, and “Are you sure…” will appear. Just enter yes and press Enter. Finally, “Hi, xxx! You’ve successfully…” will pop up, indicating that the connection is successful.</p>
+<h2 id="Install-Hexo-blog-program"><a href="#Install-Hexo-blog-program" class="headerlink" title="Install Hexo blog program"></a>Install Hexo blog program</h2><p>First create a file shelf to store Hexo program files. I created it in <code>/var/www/hexo</code>, then enter this directory and use npm to install Hexo with one click.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>After the installation is complete, initialize and install components</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p>Once completed, you can generate the page and preview it.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexos</span><br></pre></td></tr></table></figure>
+<p>Then you can visit <a target="_blank" rel="noopener" href="https://localhost:4000/">https://localhost:4000</a>, the default page will appear, and the local blog is successfully installed (^▽^)</p>
+<h2 id="Upload-deployment"><a href="#Upload-deployment" class="headerlink" title="Upload deployment"></a>Upload deployment</h2><p>Then you can deploy Hexo to the GitHub page (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧<br>First you need to install hexo-deployer-git</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>Then modify the Deployment part in the _config.yml file as follows</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">	type: git</span><br><span class="line">	repository: git@github.com:username/username.github.io.git</span><br><span class="line">	branch: main</span><br></pre></td></tr></table></figure>
+<p>Finally, run <code>hexo d</code> to upload and deploy the web page to github, <del>Finished (≧∇≦)&#x2F;</del></p>
+<h2 id="Blog-theme-modification"><a href="#Blog-theme-modification" class="headerlink" title="Blog theme modification"></a>Blog theme modification</h2><p>I don’t like the initial interface of hexo very much. I browsed many themes on the hexo official website and they are all very good-looking. I finally chose to use AirCloud, which I found to be relatively simple and good-looking.<br>After selecting the theme you want, click to jump directly to GitHub. There is a very detailed tutorial on changing the theme. Just follow it. I have tried many, and the basic process is almost the same. Just use <code>git clone https://github.com/…</code> will do. Generally, you download directly the themes folder in the folder where the hexo file is saved, but some are directly saved in the hexo folder. If this is the case, go into this folder and find the themes in this folder and copy it to your own. Just go to themes and finally go to _config.yml to change the theme and it will be ok. I use <code>git clone https://github.com/aircloud/hexo-aircloud-blog.git --recursive</code> and save it directly in the <code>/var/www/hexo</code> folder called <code>hexo -air-blog</code> Then find the themes in this folder and copy them to my own themes. After making changes, remember to re-upload and deploy to GitHub.<br>Officially finished with flowers (^▽^)&#x2F;★*☆♪</p>
+
+        
+        <br />
+        <div id="comment-container">
+        </div>
+        <div id="disqus_thread"></div>
+        <div id="lv-container"></div>
+        <div class="giscus"></div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+    </ul>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>  Theme <a target="_blank" rel="noopener" href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = true
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/js/index.js"></script>
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+</html>
